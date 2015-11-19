@@ -1,0 +1,42 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-brand,
+.navbar-right li form,
+.navbar ul li a {
+    line-height: 50px;
+    height: 50px;
+    padding-top: 0;
+}
+.navbar-right form {
+  margin: none;
+}
+.navbar {
+  font-size: 125%;
+  font-weight: bold;
+  background: white;
+  margin-bottom: 0;
+  padding-left: none !important;
+}
+.navbar-brand {
+  background: white;
+}
+#navbar2 {
+  font-size: 100%;
+  background: #BEC858;
+  text-align: center;
+  padding: none;
+}
+#signup1, #signup2 {
+  padding-top: 10px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #777;
+  }
+.nav {
+  padding-left: none !important;
+}
+ul.nav {
+  margin-left: 30px;
+}
