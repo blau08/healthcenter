@@ -41,7 +41,7 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-        <div class="form-group">
+        <div class="form-group" id="searchnav1">
         <%= form_tag(homes_path, remote: true, :method => "get", class: "navbar-form navbar-left", id: "search-form") do %>
           <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search" %>
         <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
@@ -74,6 +74,14 @@
         <li><%= link_to 'Employment / Volunteer', homes_path, :class => 'navbar-link' %></li>
         <li><%= link_to 'Partners / Resources', homes_path, :class => 'navbar-link' %></li>
         <li><%= link_to 'Contact Us', homes_path, :class => 'navbar-link' %></li>
+        <li>
+        <div class="form-group" id="searchnav2">
+        <%= form_tag(homes_path, remote: true, :method => "get", class: "navbar-form navbar-left", id: "search-form") do %>
+          <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search" %>
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+        <% end %>
+        </div>
+      </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
